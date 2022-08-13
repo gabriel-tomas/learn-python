@@ -1,0 +1,21 @@
+pt = int(input('Digite o primeiro termo: '))
+ra = int(input('Digite a razão: '))
+a = 0
+totaltermos = 0
+while a != 10:
+    print(pt, end=' ')
+    totaltermos = totaltermos + 1
+    pt = pt + ra
+    a = a + 1
+termos = 1
+conttermos = 0
+while termos != 0:
+    termos = termos - 1
+    termos = int(input('\nDigite quantos termos: '))
+    conttermos = conttermos + termos
+    a = a - a
+    while a != termos:
+        print(pt, end=' ')
+        pt = pt + ra
+        a = a + 1
+print('Progessão finalizada com {} termos exibidos.'.format(totaltermos + conttermos))

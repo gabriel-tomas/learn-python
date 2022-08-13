@@ -1,0 +1,6 @@
+nome = input('\033[30;45;1mDiga seu nome completo: \033[m')
+print('\033[37mNome com todas letras maiusculas: \033[32;4m{}\033[m'.format(nome.upper()))
+print('\033[37mNome com todas letras minusculas: \033[32;4m{}\033[m'.format(nome.lower()))
+print('\033[37mNúmero de letras, sem considerar os espaços: \033[32;4m{}\033[m'.format(len(nome) - nome.count(' ')))
+a = nome.split()
+print('\033[37mPrimeiro nome: \033[32;4m{}'.format(len(a[0])))
